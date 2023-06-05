@@ -30,18 +30,28 @@
         // timing options
         duration: 650,
         iterations: 2,
-        // fill:fillMode
+        
       }
     );
 
-    const resultAnime = result.animate([{ opacity: "0" }, { opacity: "1" }], {
+    // おみくじ結果の文字　フェードイン
+    const resultAnime = result.animate([
+      { opacity: "0" }, 
+      { opacity: "1" }
+    ], 
+    {
       duration: 3000,
       delay: 1300,
+      // fill:fillMode
     });
   });
 
-  要修正;
-  setTimeout(() => {
-    resultAnime();
-  }, 8000);
+  // 要修正;
+  // setTimeout(() => {
+  //   resultAnime();
+  // }, 8000);
 }
+
+// 最終更新日時
+// 複数のメモを保存
+タイマーの作成
