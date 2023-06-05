@@ -93,15 +93,19 @@ button:active {
   transform: translateY(3px);
 }
 
+/* #result{
+  opacity:0;
+} */
+
 
 /* ボタンのアニメーション */
-.animebtn {
+.anime-btn {
   opacity: 1;
   overflow: hidden;
   position: relative;
   cursor: pointer;
 }
-.animebtn::before {
+.anime-btn::before {
   background-color: #fff;
   content: "";
   display: block;
@@ -113,11 +117,11 @@ button:active {
   opacity: 0;
   transition: cubic-bezier(0.32, 0, 0.67, 0);
 }
-.animebtn:hover::before {
-  animation: kiran 0.5s linear 1;
+.anime-btn:hover::before {
+  animation: shine 0.5s linear 1;
 }
  
-@keyframes kiran {
+@keyframes shine {
   0% {
     transform: scale(2) rotate(45deg);
     opacity: 0;

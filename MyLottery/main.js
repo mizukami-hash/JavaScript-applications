@@ -28,14 +28,20 @@
       ],
       {
         // timing options
-        duration: 700,
+        duration: 650,
         iterations: 2,
+        // fill:fillMode
       }
     );
-    const resultAnime = result.animate(
-      [{ opacity: "0" }, { opacity: "1" }],
-      8000
-    );
 
+    const resultAnime = result.animate([{ opacity: "0" }, { opacity: "1" }], {
+      duration: 3000,
+      delay: 1300,
+    });
   });
+
+  要修正;
+  setTimeout(() => {
+    resultAnime();
+  }, 8000);
 }
